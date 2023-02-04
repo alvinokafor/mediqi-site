@@ -1,0 +1,65 @@
+---
+import Nav from "./Nav.astro";
+---
+
+<header
+  class="relative overflow-hidden bg-[url('/assets/happy-family.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  <Nav />
+
+  <section class="mx-auto mt-20 max-w-xs md:max-w-6xl">
+    <div
+      class="relative z-30 flex flex-col items-center gap-y-10 text-white md:flex-row md:gap-x-4"
+    >
+      <div class="flex-1">
+        <h1 class="font-heading text-heading-three md:text-heading-one">
+          Reliable and affordable telehealth solution
+        </h1>
+        <p class="mt-4 text-sm font-normal md:text-xl">
+          Mediq-i provides you with healthcare services from trusted, licensed
+          professionals.
+        </p>
+      </div>
+
+      <div class="mb-16 bg-white px-5 md:mb-0 md:px-8">
+        <div class="mt-8 mb-12 md:mt-12">
+          <h1
+            class="mb-4 font-heading text-heading-three text-secondary md:text-heading-two"
+          >
+            Get started
+          </h1>
+          <p class="w-5/6 text-sm text-slate-500 md:w-full md:text-base">
+            Gain early access by signing up for our wait list
+          </p>
+        </div>
+
+        <form class="pb-12">
+          <div class="mb-8 flex flex-col text-slate-500">
+            <label class="mb-2.5 text-sm" for="name">Name</label>
+            <input
+              class="border-2 border-secondary/30 py-2.5 px-2.5 outline-none md:py-4"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="flex flex-col text-slate-500">
+            <label class="mb-2.5 text-sm" for="email">Email</label>
+            <input
+              class="border-2 border-secondary/30 py-2.5 px-2.5 outline-none md:py-4"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <button
+            class="mt-10 rounded-full bg-secondary py-3 px-[18px] text-sm font-bold text-white md:text-lg hover:opacity-80 transition-all duration-300"
+            >Get early access</button
+          >
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="absolute inset-0 z-10 bg-black/30"></div>
+</header>
