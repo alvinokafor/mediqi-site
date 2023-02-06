@@ -15,10 +15,15 @@ module.exports = {
         "heading-one": "3.375rem",
         "heading-two": "2.5rem",
         "heading-three": "1.75rem",
-        'heading-four': '1.625rem',
+        "heading-four": "1.625rem",
       },
       maxWidth: {
         container: "1290px",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        icon: "repeat(3, 30px 30px)",
+
       },
     },
   },
