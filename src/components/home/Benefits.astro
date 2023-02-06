@@ -1,0 +1,34 @@
+---
+import BenefitsCard from "./BenefitsCard.astro";
+
+const benefits = [
+  "Primary care for several medical conditions",
+  "Quick access to medical specialists",
+  "Bookings for in house health services",
+  "Affordable and reliable healthcare services",
+  "Quick and affordable pharmaceutical services",
+  "Access to health education and tips",
+];
+---
+
+<section
+  class="mx-auto mt-28 max-w-xs sm:max-w-xl md:max-w-3xl lg:mt-28 lg:max-w-6xl"
+>
+  <div class="mb-6 space-y-3 text-center md:mb-14 md:space-y-4">
+    <h1
+      class="font-heading text-heading-four text-secondary lg:text-heading-one"
+    >
+      Your benefits
+    </h1>
+    <p
+      class="mx-auto text-sm text-secondary/60 sm:w-5/6 md:w-3/5 md:text-base lg:text-xl"
+    >
+      What you get from tapping into Mediqi’s fast, reliable and secure
+      healthcare services
+    </p>
+  </div>
+
+  <div class="grid gap-x-5 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
+    {benefits.map((benefit) => <BenefitsCard title={benefit} />)}
+  </div>
+</section>

@@ -1,0 +1,12 @@
+---
+import checkMark from "/assets/check-mark.svg";
+
+const { title } = Astro.props;
+---
+
+<div
+  class="items-centers flex gap-x-4 rounded-lg bg-secondary py-7 px-9 font-bold text-white"
+>
+  <img class="h-[30px] w-[30px]" src={checkMark} alt="check mark" />
+  <p>{title}</p>
+</div>
