@@ -1,0 +1,24 @@
+---
+import wavePattern from '/assets/wave-pattern.svg'
+---
+
+<section class="bg-secondary py-10 sm:py-16 lg:py-44 relative">
+
+    <div class="flex lg:flex-row flex-col relative z-30 mx-auto max-w-xs text-white sm:max-w-xl md:max-w-3xl lg:max-w-6xl">
+
+       <div class="lg:w-[60%]">
+         <h3 class="font-heading mb-8 lg:mb-0 text-xl sm:text-heading-three lg:text-heading-two lg:leading-[140%]">Get helpful,doctor-recommended health news and tips, delivered weekly.</h3>
+       </div>
+
+        <div class="lg:w-[40%]">
+            <form class="flex flex-col items-start">
+            <input class="bg-transparent border-2 border-white py-5 sm:py-6 px-3 mb-3 w-full outline-slate-200" type="text" placeholder="Enter your name">
+            <input class="bg-transparent border-2 border-white py-5 sm:py-6 px-3 mb-4 w-full outline-slate-200" type="email" placeholder="Enter your email ">
+            <button class="bg-white border-2 border-white text-secondary font-bold py-4 px-7 rounded-full hover:border-2 hover:bg-opacity-0 hover:text-white transition-all duration-150">Subscribe now</button>
+        </form>
+        </div>
+    </div>
+    <div class="absolute top-0 bottom-0 right-0 left-0 lg:left-auto z-10">
+        <img class="h-full w-full" src={wavePattern} alt="wave pattern">
+    </div>
+</section>
