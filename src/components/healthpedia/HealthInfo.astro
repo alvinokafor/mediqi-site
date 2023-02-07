@@ -1,0 +1,31 @@
+---
+import Nav from "../partials/Nav.astro";
+import Container from "../../layouts/Container.astro";
+
+const {heading, body1, body2} = Astro.props
+---
+
+<header
+  class="relative overflow-hidden bg-[url('/assets/healthpedia.jpg')] bg-cover bg-fixed bg-center bg-no-repeat"
+>
+  <Nav />
+
+  <Container>
+    <section
+      class="relative z-30 mx-auto mt-7 mb-20 space-y-5 text-white sm:mt-7"
+    >
+      <h1
+        class="mb-10 text-center font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+      >
+        {heading}
+      </h1>
+
+      <p class="sm:text-lg text-center md:w-[70%] mx-auto">
+        {body1}
+        <br /> <br />
+        {body2}
+      </p>
+    </section>
+  </Container>
+  <div class="absolute inset-0 z-20 bg-black/60 backdrop-blur-lg"></div>
+</header>

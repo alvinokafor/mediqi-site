@@ -1,0 +1,123 @@
+---
+import Nav from "../partials/Nav.astro";
+import Container from "../../layouts/Container.astro";
+---
+
+<header
+  class="relative overflow-hidden bg-[url('/assets/healthpedia.jpg')] bg-cover bg-fixed bg-center bg-no-repeat"
+>
+  <Nav />
+
+  <Container>
+    <section
+      class="relative z-30 mx-auto mt-7 mb-20 space-y-5 text-white sm:mt-7"
+    >
+      <h1
+        class="mb-10 text-center font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+      >
+        Healthpedia
+      </h1>
+
+      <div class="grid gap-x-5 gap-y-20 md:grid-cols-3 lg:grid-cols-4">
+        <div class="space-y-5">
+          <h3
+            class="rounded-lg bg-secondary py-3 px-4 text-center font-heading text-white"
+          >
+            Mens Health
+          </h3>
+          <ul class="space-y-5 text-center text-lg md:pl-5 md:text-left">
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/heart-disease">Heart disease</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/erectile-dysfunction"
+                >Erectile dysfunction</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/low-testosterone">Low terosterone</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3
+            class="rounded-lg bg-secondary py-3 px-4 text-center font-heading text-white"
+          >
+            Womens Health
+          </h3>
+          <ul class="space-y-5 text-center md:pl-5 md:text-left md:text-lg">
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/breast-cancer">Breast cancer</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/ovarian-cancer">Ovarain cancer</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/gynecological-health"
+                >Gynecological health</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3
+            class="rounded-lg bg-secondary py-3 px-4 text-center font-heading text-white"
+          >
+            Mental health
+          </h3>
+          <ul class="space-y-5 text-center md:pl-5 md:text-left md:text-lg">
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/depression">Depression</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/anxiety">Anxiety</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/bipolar-disorder">Bipolar disorder</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3
+            class="rounded-lg bg-secondary py-3 px-4 text-center font-heading text-white"
+          >
+            Common Conditions
+          </h3>
+          <ul class="space-y-5 text-center md:pl-5 md:text-left md:text-lg">
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/common-cold">Common cold</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/malaria">Malaria</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/typhoid">Typhoid</a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3
+            class="rounded-lg bg-secondary py-3 px-4 text-center font-heading text-white"
+          >
+            Sexual Health
+          </h3>
+          <ul class="space-y-5 text-center md:pl-5 md:text-left md:text-lg">
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/stis">STIs</a>
+            </li>
+            <li class="transition-all duration-150 hover:text-white/70">
+              <a href="/healthpedia/premature-ejaculation">Premature ejaculation</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="space-y-5">
+            <h3 class="bg-secondary py-3 px-4 text-center  font-heading  rounded-lg text-white">Lifestyle</h3>
+            <ul class="space-y-5 text-center md:text-left  md:pl-5 md:text-lg">
+                <li class="hover:text-white/70 transition-all duration-150"><a href="/healthpedia/prostrate">Prostrate</a></li>
+                <li class="hover:text-white/70 transition-all duration-150"><a href="/healthpedia/hair-loss">Hair loss</a></li>
+                <li class="hover:text-white/70 transition-all duration-150"><a href="/healthpedia/hair-loss">Erectile dysfunction</a></li>
+            </ul>
+        </div>  -->
+      </div>
+    </section>
+  </Container>
+  <div class="absolute inset-0 z-20 bg-black/60 backdrop-blur-lg"></div>
+</header>
