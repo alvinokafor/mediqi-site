@@ -10,12 +10,14 @@ import hamburgerMenu from "/assets/hamburger-menu.svg";
     data-visible="false"
     class="absolute inset-0 z-50 h-screen space-y-8 bg-black/70 text-white backdrop-blur-md md:hidden"
   >
-    <ul class="mx-auto mt-32 max-w-xs sm:max-w-xl  space-y-5 font-heading text-xl">
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Blog</li>
-      <li>Carrers</li>
-      <li>Healthpedia</li>
+    <ul
+      class="mx-auto mt-32 max-w-xs space-y-5 font-heading text-xl sm:max-w-xl"
+    >
+      <li><a href="/">Home</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/carrers">Carrers</a></li>
+      <li><a href="/healthpedia">Healthpedia</a></li>
       <li class="font-sans">
         <button
           class="z-30 mt-4 rounded-full border-2 border-white bg-white py-2 px-[18px] font-bold text-slate-800 opacity-100 transition-all duration-300 hover:border-2 hover:border-white hover:bg-opacity-0 hover:text-white md:block"
@@ -36,27 +38,27 @@ import hamburgerMenu from "/assets/hamburger-menu.svg";
       <ul class="hidden gap-x-6 text-lg md:flex">
         <button
           ><li class="transition-all duration-100 hover:font-bold">
-            Home
+            <a href="/">Home</a>
           </li></button
         >
         <button
           ><li class="transition-all duration-100 hover:font-bold">
-            About Us
+            <a href="/about-us">About us</a>
           </li></button
         >
         <button
           ><li class="transition-all duration-100 hover:font-bold">
-            Blog
+            <a href="/blog">Blog</a>
           </li></button
         >
         <button
           ><li class="transition-all duration-100 hover:font-bold">
-            Carrers
+            <a href="/carrers">Carrers</a>
           </li></button
         >
         <button
           ><li class="transition-all duration-100 hover:font-bold">
-            Healthpedia
+            <a href="/healthpedia">Healthpedia</a>
           </li></button
         >
       </ul>
