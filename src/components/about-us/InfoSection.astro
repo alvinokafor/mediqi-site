@@ -1,17 +1,29 @@
 ---
-import Container from "../../layouts/Container.astro";
-import infoSectionImg from '/assets/why-mediqi.png'
+import infoSectionImg from "/assets/why-mediqi.png";
 ---
 
-<section class="md:ml-[98px] mt-20 md:mt-0">
-    <div class="flex flex-col md:flex-row items-center gap-x-6">
-        <div class="md:flex-1 text-center md:text-left  max-w-xs sm:max-w-xl md:max-w-none mx-auto mb-9 md:mb-0">
-            <h1 class="font-heading text-heading-four sm:text-heading-three lg:text-heading-two text-secondary">Why Mediq-i?</h1>
-            <p class="text-sm sm:text-base md:text-lg text-secondary/60">We offer a multimodal solution to the existing problems in health care. It is a one stop shop for users as patients have access to a wide range of health care services.
-            </p>
-        </div>
-        <div class=" bg-[#D57A66] md:flex-1 flex justify-center items-center w-full">
-            <img class="py-10 md:py-12 md:px-20 lg:py-16 lg:px-36" src={infoSectionImg} alt="">
-        </div>
+<section class="mt-20 md:ml-[98px] md:mt-0">
+  <div class="flex flex-col items-center gap-x-6 md:flex-row">
+    <div
+      class="mx-auto mb-9 max-w-xs text-center sm:max-w-xl md:mb-0 md:max-w-none md:flex-1 md:text-left"
+    >
+      <h1
+        class="font-heading text-heading-four text-secondary sm:text-heading-three lg:text-heading-two"
+      >
+        Why Mediq-i?
+      </h1>
+      <p class="text-sm text-secondary/60 sm:text-base md:text-lg">
+        We offer a multimodal solution to the existing problems in health care.
+        It is a one stop shop for users as patients have access to a wide range
+        of health care services.
+      </p>
     </div>
+    <div class="flex w-full items-center justify-center bg-[#D57A66] md:flex-1">
+      <img
+        class="py-10 md:py-12 md:px-20 lg:py-16 lg:px-36"
+        src={infoSectionImg}
+        alt=""
+      />
+    </div>
+  </div>
 </section>
