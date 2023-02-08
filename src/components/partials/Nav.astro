@@ -1,6 +1,5 @@
 ---
 import logoSmall from "/assets/logo-small.svg";
-import hamburgerMenu from "/assets/hamburger-menu.svg";
 ---
 
 <nav class="w-full text-white">
@@ -30,34 +29,54 @@ import hamburgerMenu from "/assets/hamburger-menu.svg";
 
   <!-- desktop menu -->
   <section
-    class="mx-auto flex max-w-xs items-center justify-between py-9 sm:max-w-xl md:max-w-3xl lg:max-w-6xl"
+    class="menu mx-auto flex max-w-xs items-center justify-between py-9 sm:max-w-xl md:max-w-3xl lg:max-w-6xl"
   >
     <div class="z-50 flex items-center gap-x-12">
-      <img src={logoSmall} alt="Comapany logo" />
+      <img class="menu-logo" src={logoSmall} alt="Comapany logo" />
 
       <ul class="hidden gap-x-6 text-lg md:flex">
         <button
-          ><li class="transition-all duration-100 hover:font-bold">
+          ><li
+            class={`transition-all ${
+              Astro.url.pathname === "/" && "font-bold"
+            } duration-100 hover:font-bold`}
+          >
             <a href="/">Home</a>
           </li></button
         >
         <button
-          ><li class="transition-all duration-100 hover:font-bold">
+          ><li
+            class={`transition-all ${
+              Astro.url.pathname === "/about-us" && "font-bold"
+            } duration-100 hover:font-bold`}
+          >
             <a href="/about-us">About us</a>
           </li></button
         >
         <button
-          ><li class="transition-all duration-100 hover:font-bold">
+          ><li
+            class={`transition-all ${
+              Astro.url.pathname === "/blog" && "font-bold"
+            } duration-100 hover:font-bold`}
+          >
             <a href="/blog">Blog</a>
           </li></button
         >
         <button
-          ><li class="transition-all duration-100 hover:font-bold">
+          ><li
+            class={`transition-all ${
+              Astro.url.pathname === "/carrers" && "font-bold"
+            } duration-100 hover:font-bold`}
+          >
             <a href="/carrers">Carrers</a>
           </li></button
         >
         <button
-          ><li class="transition-all duration-100 hover:font-bold">
+          ><li
+            class={`transition-all ${
+              Astro.url.pathname.includes("healthpedia") && "font-bold"
+            } duration-100 hover:font-bold`}
+          >
             <a href="/healthpedia">Healthpedia</a>
           </li></button
         >
@@ -65,7 +84,7 @@ import hamburgerMenu from "/assets/hamburger-menu.svg";
     </div>
 
     <button
-      class="z-30 hidden rounded-full border-2 border-white bg-white py-3 px-[18px] text-lg font-bold text-secondary opacity-100 transition-all duration-300 hover:border-2 hover:border-white hover:bg-opacity-0 hover:text-white md:block"
+      class="menu-btn z-30 hidden rounded-full border-2 border-white bg-white py-3 px-[18px] text-lg font-bold text-secondary opacity-100 transition-all duration-300 hover:border-2 hover:border-white hover:bg-opacity-0 hover:text-white md:block"
       >Get started</button
     >
 
@@ -103,4 +122,61 @@ import hamburgerMenu from "/assets/hamburger-menu.svg";
       menu.setAttribute("data-visible", "false");
     }
   }
+
+  const header = document.querySelector("header");
+  const nav = document.querySelector("nav");
+
+  const navOptions = {};
+
+  const navObserver = new IntersectionObserver(function (entries, navObserver) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        nav.classList.add("nav-active");
+      } else {
+        nav.classList.remove("nav-active");
+      }
+    });
+  }, navOptions);
+
+  navObserver.observe(header);
 </script>
+
+<style>
+  .nav-active {
+    position: fixed;
+    color: #1d2238;
+    background-color: white;
+    transition: all;
+    transition-duration: 200ms;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+  }
+
+  .nav-active .menu {
+    padding-block: 20px;
+  }
+
+  .nav-active .menu-btn {
+    color: white;
+    background-color: #1d2238;
+  }
+  .nav-active .menu-btn:hover {
+    color: #1d2238;
+    background-color: transparent;
+    border: 2px solid #1d2238;
+  }
+
+  .nav-active .menu-logo {
+    filter: invert(90%);
+  }
+
+  .nav-active .hamburger-top {
+    background-color: #1d2238;
+  }
+  .nav-active .hamburger-middle {
+    background-color: #1d2238;
+  }
+  .nav-active .hamburger-bottom {
+    background-color: #1d2238;
+  }
+</style>

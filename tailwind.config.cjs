@@ -23,9 +23,8 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 16 column grid
         icon: "repeat(3, 30px 30px)",
-
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

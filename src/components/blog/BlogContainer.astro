@@ -2,33 +2,15 @@
 import BlogCard from "./BlogCard.astro";
 import Container from "../../layouts/Container.astro";
 
-const blogPosts = [
-  {
-    title: "Benefits of ginger",
-    date: "March 23 2023",
-    excerpt:
-      "Ginger is a flowering plant whose rhizome, ginger root or ginger...",
-  },
-  {
-    title: "Benefits of ginger",
-    date: "March 23 2023",
-    excerpt:
-      "Ginger is a flowering plant whose rhizome, ginger root or ginger...",
-  },
-  {
-    title: "Benefits of ginger",
-    date: "March 23 2023",
-    excerpt:
-      "Ginger is a flowering plant whose rhizome, ginger root or ginger...",
-  },
-];
+const posts = await Astro.glob('/src/blog-posts/*.md');
+
 ---
 
 <Container>
   <section class="mt-14 mb-32 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-5">
     {
-      blogPosts.map((post) => (
-        <BlogCard title={post.title} date={post.date} excerpt={post.excerpt} />
+      posts.map((post) => (
+        <BlogCard title={post.frontmatter.title} image={post.frontmatter.image} date={post.frontmatter.date} excerpt={post.frontmatter.excerpt} slug={post.frontmatter.slug}/>
       ))
     }
   </section>

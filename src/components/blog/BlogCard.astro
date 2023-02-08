@@ -1,14 +1,14 @@
 ---
-import personalized from '/assets/personalized.png'
 
-const {title, date, excerpt} = Astro.props
+
+const {title, date, excerpt, slug, image} = Astro.props
 ---
 
 <div>
-    <div class=" rounded-lg"><img class="w-full h-full object-cover rounded-lg" src={personalized} alt=""></div>
+    <div class=" rounded-lg"><img class="w-full h-full object-cover rounded-lg" src={image} alt=""></div>
 
     <div class="mt-5 sm:mt-10 space-y-4">
-        <h3 class="font-heading text-secondary text-xl md:text-heading-four">{title}</h3>
+        <a href={`/${slug}`}><h3 class="font-heading text-secondary text-xl md:text-heading-four">{title}</h3></a> 
         
         <div class="space-y-2">
             <p class="text-sm font-bold text-secondary ">{date}</p>
