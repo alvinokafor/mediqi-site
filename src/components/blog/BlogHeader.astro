@@ -1,0 +1,23 @@
+---
+import Nav from "../partials/Nav.astro";
+import Container from "../../layouts/Container.astro";
+---
+
+<header
+  class="relative h-screen overflow-hidden bg-[url('/assets/blog-header.png')] bg-cover bg-center bg-no-repeat"
+>
+  <Nav />
+
+  <Container>
+    <section
+      class="relative z-30 mx-auto mt-40 space-y-5 text-white sm:mt-40 sm:mb-0"
+    >
+      <h1
+        class="text-center font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+      >
+        Blog
+      </h1>
+    </section>
+  </Container>
+  <div class="absolute inset-0 z-20 bg-black/60"></div>
+</header>
