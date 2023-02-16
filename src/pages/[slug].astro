@@ -4,27 +4,34 @@ import Container from "../layouts/Container.astro";
 import SingleBlogHeader from "../components/blog/SingleBlogHeader.astro";
 
 export async function getStaticPaths() {
-    const posts = await Astro.glob('/src/blog-posts/*.md');
+  const posts = await Astro.glob("/src/blog-posts/*.md");
 
-    return posts.map((post) => ({
-        params: {
-            slug: post.frontmatter.slug
-        },
-        props: {
-            post
-        }
-    }))
+  return posts.map((post) => ({
+    params: {
+      slug: post.frontmatter.slug,
+    },
+    props: {
+      post,
+    },
+  }));
 }
 
-const {Content, frontmatter} = Astro.props.post
+const { Content, frontmatter } = Astro.props.post;
 ---
 
 <Layout title={frontmatter.title}>
-    <SingleBlogHeader title={frontmatter.title} author={frontmatter.author} date={frontmatter.date} image={frontmatter.image}/>
-    <Container>
-        <section class="my-20 prose max-w-none">
-            <div ><img class="w-full rounded-lg" src={frontmatter.image} alt=""></div>
-            <Content />
-        </section>
-    </Container>
+  <SingleBlogHeader
+    title={frontmatter.title}
+    author={frontmatter.author}
+    date={frontmatter.date}
+    image={frontmatter.image}
+  />
+  <Container>
+    <section class="prose my-20 max-w-none leading-loose md:text-lg">
+      <div>
+        <img class="w-full rounded-lg" src={frontmatter.image} alt="" />
+      </div>
+      <Content />
+    </section>
+  </Container>
 </Layout>
