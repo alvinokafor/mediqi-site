@@ -1,13 +1,11 @@
 ---
-title: 'Vagina health'
-slug: 'vagina-health'
+title: 'Why your vagina smells the way it does'
+slug: 'why-your-vagina-smells-the-way-it-does'
 date: 'March 22, 2023'
-author: 'Umutu Ikang'
+author: 'Dr. Ikang'
 image: '/assets/vagina-health.jpg'
 excerpt: 'Most women are sensitive to a change in the normal smell...'
 ---
-
-## Why your vagina smells the way it does
 
 Do you know that every vagina has its own unique smell? And No, Vaginas do not smell like roses and they should not be expected to. However, a change in the familiar scent may be an indicator that something is wrong.
 Most women are sensitive to a change in the normal smell of their vagina with complaints ranging from a slightly off smell to a strong offensive odour which may be associated with an abnormal discharge.
@@ -25,7 +23,7 @@ This occurs when there is an overgrowth of the bad bacteria that exists in the v
 - To decrease risk of BV, women are advised to abstain from douching and using harsh feminine products that can cause a change in the vaginal environment which favours the growth of the bad bacteria.
 - It is also advised to practice safe sex and refrain from having multiple sexual partners.
 
-#### Hygine 
+#### Hygiene
 Having a good hygiene is key to maintaining a clean, offensive odour free vagina. The vagina, like other parts of the body contains glands and sweats. This can lead to the build up of bacteria if not adequately washed. Also, it’s proximity to the anus makes it easy for the spread of bacteria. It is therefore important that these areas are properly cleaned especially after using the toilet.
 
 #### Trichomoniasis 

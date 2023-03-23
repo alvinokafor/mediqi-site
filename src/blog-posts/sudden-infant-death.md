@@ -2,7 +2,7 @@
 title: 'Sudden infant death'
 slug: 'sudden-infant-death'
 date: 'Febuary 17, 2023'
-author: 'Umutu Ikang'
+author: 'Dr. Ikang'
 image: 'https://images.pexels.com/photos/6392895/pexels-photo-6392895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 excerpt: 'Sudden infant death syndrome (SIDS) also known as crib or cot death...'
 ---
