@@ -1,7 +1,8 @@
 ---
+datePosted: '03-22-2023'
 title: 'Why your vagina smells the way it does'
 slug: 'why-your-vagina-smells-the-way-it-does'
-date: 'March 22, 2023'
+date: '03-22-2023'
 author: 'Dr. Ikang'
 image: '/assets/vagina-health.jpg'
 excerpt: 'Most women are sensitive to a change in the normal smell...'
