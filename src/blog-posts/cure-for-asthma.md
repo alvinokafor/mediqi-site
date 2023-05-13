@@ -1,7 +1,8 @@
 ---
+datePosted: '05-12-2023'
 title: 'A cure for asthma?'
 slug: 'cure-for-asthma'
-date: 'May 12, 2023'
+date: '05-12-2023'
 author: 'Dr. Ikang'
 image: 'https://images.unsplash.com/photo-1637930030065-718e98132fbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
 excerpt: 'Asthma is a common condition found in 262 million people worldwide...'

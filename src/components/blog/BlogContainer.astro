@@ -2,15 +2,27 @@
 import BlogCard from "./BlogCard.astro";
 import Container from "../../layouts/Container.astro";
 
-const posts = await Astro.glob('/src/blog-posts/*.md');
+const posts = await Astro.glob("/src/blog-posts/*.md");
 
+const sortedPosts = posts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.datePosted) - Date.parse(a.frontmatter.datePosted)
+);
 ---
 
 <Container>
-  <section class="mt-14 mb-32 grid sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-5">
+  <section
+    class="mt-14 mb-32 grid gap-10 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3"
+  >
     {
-      posts.map((post) => (
-        <BlogCard title={post.frontmatter.title} image={post.frontmatter.image} date={post.frontmatter.date} excerpt={post.frontmatter.excerpt} slug={post.frontmatter.slug}/>
+      sortedPosts.map((post) => (
+        <BlogCard
+          title={post.frontmatter.title}
+          image={post.frontmatter.image}
+          date={post.frontmatter.date}
+          excerpt={post.frontmatter.excerpt}
+          slug={post.frontmatter.slug}
+        />
       ))
     }
   </section>

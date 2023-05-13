@@ -1,7 +1,13 @@
 ---
 import Nav from "../partials/Nav.astro";
 
-const {title, author, date, image} = Astro.props
+const { title, author, date, image } = Astro.props;
+
+const date_posted = Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+}).format(new Date(date));
 ---
 
 <header
@@ -10,15 +16,15 @@ const {title, author, date, image} = Astro.props
   <Nav />
 
   <section
-    class="relative z-30 mx-auto my-48 sm:mt-24 max-w-xs space-y-5 text-center text-white sm:max-w-xl md:max-w-3xl lg:max-w-6xl"
+    class="relative z-30 mx-auto my-48 max-w-xs space-y-5 text-center text-white sm:mt-24 sm:max-w-xl md:max-w-3xl lg:max-w-6xl"
   >
     <h1
       class="font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
     >
-      {title} 
+      {title}
     </h1>
 
-    <h5 class="font-bold">{date}</h5>
+    <h5 class="font-bold">{date_posted}</h5>
     <h4 class="text-xl">by {author}</h4>
   </section>
 
