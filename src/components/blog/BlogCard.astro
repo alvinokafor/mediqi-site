@@ -1,18 +1,28 @@
 ---
+const { title, date, excerpt, slug, image } = Astro.props;
 
-
-const {title, date, excerpt, slug, image} = Astro.props
+const date_posted = Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+}).format(new Date(date));
 ---
 
 <div>
-    <div class=" rounded-lg"><img class="w-full h-full object-cover rounded-lg" src={image} alt=""></div>
+  <div class="h-1/2 basis-1/2 rounded-lg">
+    <img class="h-full w-full rounded-lg object-cover" src={image} alt="" />
+  </div>
 
-    <div class="mt-5 sm:mt-10 space-y-4">
-        <a href={`/${slug}`}><h3 class="font-heading text-secondary text-xl md:text-heading-four">{title}</h3></a> 
-        
-        <div class="space-y-2">
-            <p class="text-sm font-bold text-secondary ">{date}</p>
-            <p class="text-secondary/70 md:w-5/6">{excerpt}</p>
-        </div>
+  <div class="mt-5 h-1/4 space-y-4 sm:mt-10">
+    <a href={`/${slug}`}
+      ><h3 class="font-heading text-xl text-secondary md:text-heading-four">
+        {title}
+      </h3></a
+    >
+
+    <div class="h-1/4 space-y-2">
+      <p class="text-sm font-bold text-secondary">{date_posted}</p>
+      <p class="text-secondary/70 md:w-5/6">{excerpt}</p>
     </div>
+  </div>
 </div>
