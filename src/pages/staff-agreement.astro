@@ -1,0 +1,156 @@
+---
+import Nav from "../components/partials/Nav.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title={"Staff Agreement - Mediq-i"}>
+  <header
+  class="relative h-[500px] overflow-hidden bg-[url('/assets/agreement.png')] bg-cover bg-center bg-no-repeat"
+>
+  <Nav />
+
+  <Container>
+    <section
+      class="relative z-30 mx-auto mt-48 space-y-5 text-center text-white sm:mt-32"
+    >
+      <h1
+        class="font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+      >
+        Staff Agreement
+      </h1>
+      <!-- <p class="mx-auto text-base sm:w-4/5 sm:text-lg lg:w-3/5 lg:text-xl">
+        This agreement is between Mediq-i and the staff members .
+      </p> -->
+    </section>
+  </Container>
+    <div class="absolute inset-0 z-10 bg-black/40"></div>
+</header>
+
+<Container>
+  <div class="mx-auto max-w-4xl py-16">
+    <h1 class="mb-8 text-center text-4xl font-bold text-primary">Staff Agreement & Code of Conduct</h1>
+    
+    <div class="space-y-12">
+      <!-- Introduction -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">1. Introduction</h2>
+        <p class="text-gray-700">
+          This Staff Agreement sets forth the standards, responsibilities, and professional
+          expectations for employees and partners of Mediq-I. Health. All team members must adhere
+          to the values and mission of the organization.
+        </p>
+      </section>
+
+      <!-- Core Company Values -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">2. Core Company Values</h2>
+        <p class="mb-4 text-gray-700">All Mediq-I. Health staff are expected to uphold and exemplify the following values:</p>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Integrity</h3>
+            <p class="text-gray-700">Maintain transparency and ethics in all conduct.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Reliability</h3>
+            <p class="text-gray-700">Be consistently dependable in delivering duties.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Fairness</h3>
+            <p class="text-gray-700">Ensure impartiality and equality in all interactions.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Loyalty</h3>
+            <p class="text-gray-700">Demonstrate dedication to the company's mission and success.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Honesty</h3>
+            <p class="text-gray-700">Uphold truthful and clear communication at all times.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Care</h3>
+            <p class="text-gray-700">Provide empathetic and compassionate service to all patients.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Teamwork</h3>
+            <p class="text-gray-700">Foster collaboration and mutual support among staff.</p>
+          </div>
+          <div class="rounded-lg bg-gray-50 p-4">
+            <h3 class="mb-2 font-semibold text-primary">Professionalism</h3>
+            <p class="text-gray-700">Conduct oneself with competence, respect, and discipline.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Commitment to Patients -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">3. Commitment to Patients</h2>
+        <p class="mb-4 text-gray-700">Staff agree to:</p>
+        <ul class="list-inside list-disc space-y-3 text-gray-700">
+          <li>Protect patient confidentiality and comply with data protection regulations.</li>
+          <li>Always act in the best interest of the patient.</li>
+          <li>Refer patients for in-hospital assessment or care when medically necessary.</li>
+          <li>Refrain from convincing or pressuring patients to use personal/private services.</li>
+          <li>Ensure all medical records and data entries are accurate and complete.</li>
+          <li>Acknowledge that the entry of false or misleading information will result in immediate termination of the appointment without warning.</li>
+        </ul>
+      </section>
+
+      <!-- Business Integrity -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">4. Business Integrity</h2>
+        <ul class="list-inside list-disc space-y-3 text-gray-700">
+          <li>Staff must safeguard the Mediq-I. Health brand and identity.</li>
+          <li>External business engagements or collaborations must align with company values and goals.</li>
+          <li>Any conflicts of interest or ethical concerns must be disclosed immediately.</li>
+          <li>Unauthorized use of company materials, tools, or patient lists is strictly prohibited.</li>
+          <li>Staff must ensure that booked appointments are honored and not cancelled without due consideration. Any cancellations must be made with at least 24 hours' notice and accompanied by a reasonable explanation.</li>
+        </ul>
+      </section>
+
+      <!-- Compensation & Financial Policy -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">5. Compensation & Financial Policy</h2>
+        <p class="mb-4 text-gray-700">Staff earnings are based on a commission structure:</p>
+        <ul class="list-inside list-disc space-y-3 text-gray-700">
+          <li>A 70:30 revenue split will apply, with 70% going to the staff member and 30% to the company.</li>
+          <li>Payouts are based on the number of patients successfully seen and completed.</li>
+          <li>All earnings and transactions must be properly documented.</li>
+          <li>All payments will be facilitated through a third-party payment processor. Please allow up to 48 hours for account reconciliation, during which the payment may not yet be reflected.</li>
+        </ul>
+      </section>
+
+      <!-- Continuous Professional Development -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">6. Continuous Professional Development</h2>
+        <p class="mb-4 text-gray-700">All staff members are expected to:</p>
+        <ul class="list-inside list-disc space-y-3 text-gray-700">
+          <li>Engage in ongoing learning and skill enhancement.</li>
+          <li>Attend mandatory trainings, reviews, and quality improvement sessions.</li>
+          <li>Maintain licenses, certifications, and professional competence.</li>
+        </ul>
+      </section>
+
+      <!-- Opportunities for Collaboration -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">7. Opportunities for Collaboration</h2>
+        <p class="text-gray-700">
+          Mediq-I. Health welcomes staff contributions that align with our mission. If you have
+          business ideas, innovations, or proposals for collaboration, we encourage open discussion
+          and strategic partnership opportunities.
+        </p>
+      </section>
+
+      <!-- Agreement & Acknowledgment -->
+      <section class="rounded-lg bg-white p-8 shadow-md">
+        <h2 class="mb-4 text-2xl font-semibold text-primary">8. Agreement & Acknowledgment</h2>
+        <p class="text-gray-700">
+          By signing this agreement, I acknowledge that I have read and understood the terms. I agree
+          to uphold Mediq-I. Health's values and standards, maintain professionalism, and contribute
+          positively to the organization's goals.
+        </p>
+      </section>
+    </div>
+  </div>
+</Container>
+</Layout>

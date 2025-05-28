@@ -1,0 +1,163 @@
+---
+import Nav from "../components/partials/Nav.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title={"User Agreement - Mediq-i"}>
+  <header
+    class="relative h-[500px] overflow-hidden bg-[url('/assets/agreement.png')] bg-cover bg-center bg-no-repeat"
+  >
+    <Nav />
+
+    <Container>
+      <section
+        class="relative z-30 mx-auto mt-48 space-y-5 text-center text-white sm:mt-32"
+      >
+        <h1
+          class="font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+        >
+          User Agreement
+        </h1>
+      </section>
+    </Container>
+    <div class="absolute inset-0 z-10 bg-black/40"></div>
+  </header>
+
+  <Container>
+    <div class="mx-auto max-w-4xl py-16">
+      <h1 class="mb-8 text-center text-4xl font-bold text-primary">User Agreement & Service Contract</h1>
+      
+      <div class="space-y-12">
+        <!-- Purpose of Agreement -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">1. Purpose of Agreement</h2>
+          <p class="text-gray-700">
+            This document outlines the terms and conditions under which Mediq-I. Health provides
+            medical and health-related services, including but not limited to primary care, telehealth,
+            mental health support, and wellness monitoring.
+          </p>
+        </section>
+
+        <!-- Our Commitment to You -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">2. Our Commitment to You</h2>
+          <p class="mb-4 text-gray-700">At Mediq-I. Health, we are committed to delivering care that reflects our core values:</p>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Integrity</h3>
+              <p class="text-gray-700">We act with transparency and uphold the highest ethical standards.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Reliability</h3>
+              <p class="text-gray-700">We deliver consistent, dependable care and support.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Fairness</h3>
+              <p class="text-gray-700">We treat all users equitably and respectfully.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Loyalty</h3>
+              <p class="text-gray-700">We are dedicated to our patients' health and trust.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Honesty</h3>
+              <p class="text-gray-700">We communicate truthfully and openly at all times.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Care</h3>
+              <p class="text-gray-700">We prioritize empathy, compassion, and your well-being.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Teamwork</h3>
+              <p class="text-gray-700">We work collaboratively to deliver holistic care.</p>
+            </div>
+            <div class="rounded-lg bg-gray-50 p-4">
+              <h3 class="mb-2 font-semibold text-primary">Professionalism</h3>
+              <p class="text-gray-700">We conduct ourselves with competence and respect.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- User Responsibilities -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">3. User Responsibilities</h2>
+          <p class="mb-4 text-gray-700">By using Mediq-I. Health services, you agree to:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Provide accurate and complete personal and medical information.</li>
+            <li>Respect and comply with all recommendations, safety guidelines, and service protocols.</li>
+            <li>Use our services only for lawful, authorized medical purposes.</li>
+            <li>Treat our team with respect and professionalism.</li>
+          </ul>
+        </section>
+
+        <!-- Service Limitations -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">4. Service Limitations</h2>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Mediq-I. Health is not an emergency service provider. In case of emergencies, please call your local emergency services.</li>
+            <li>Our services are not a replacement for hospital care when needed.</li>
+            <li>Availability may vary based on location and technological access.</li>
+          </ul>
+        </section>
+
+        <!-- Privacy and Confidentiality -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">5. Privacy and Confidentiality</h2>
+          <p class="text-gray-700">
+            All personal and health data shared with Mediq-I. Health will be managed in compliance
+            with applicable data protection and confidentiality laws. We are committed to safeguarding
+            your privacy at all levels.
+          </p>
+        </section>
+
+        <!-- Termination of Agreement -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">6. Termination of Agreement</h2>
+          <p class="text-gray-700">
+            Both parties may terminate this agreement at any time, for any reason. Mediq-I. Health
+            reserves the right to discontinue service due to misuse, non-compliance, or abuse of the
+            platform or its personnel.
+          </p>
+        </section>
+
+        <!-- Dispute Resolution -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">7. Dispute Resolution</h2>
+          <p class="text-gray-700">
+            Any disputes arising from the use of our services shall be resolved through dialogue and, if
+            necessary, arbitration under the laws of the jurisdiction in which the Company is registered.
+          </p>
+        </section>
+
+        <!-- Modifications -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">8. Modifications</h2>
+          <p class="text-gray-700">
+            Mediq-I. Health reserves the right to modify this Agreement at any time. Users will be
+            notified of material changes and are encouraged to review the updated terms regularly.
+          </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">Contact Us</h2>
+          <div class="space-y-3 text-gray-700">
+            <p>Email: <a href="mailto:mediqihealth@gmail.com" class="text-primary hover:underline">mediqihealth@gmail.com</a></p>
+            <p>Phone: <a href="tel:+2349130056535" class="text-primary hover:underline">+234 913 005 6535</a></p>
+            <p>Website: <a href="https://www.mediqihealth.com" class="text-primary hover:underline">www.mediqihealth.com</a></p>
+          </div>
+        </section>
+
+        <!-- Acknowledgment -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">Acknowledgment</h2>
+          <p class="text-gray-700">
+            By accessing or using Mediq-I. Health services, you acknowledge that you have read,
+            understood, and agreed to be bound by the terms of this Agreement.
+          </p>
+        </section>
+      </div>
+    </div>
+  </Container>
+</Layout>
