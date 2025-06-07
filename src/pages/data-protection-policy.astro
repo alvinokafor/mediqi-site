@@ -1,0 +1,192 @@
+---
+import Nav from "../components/partials/Nav.astro";
+import Container from "../layouts/Container.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title={"Data Protection Policy - Mediq-i"}>
+  <header
+    class="relative h-[500px] overflow-hidden bg-[url('/assets/data-protection.jpg')] bg-cover bg-center bg-no-repeat"
+  >
+    <Nav />
+
+    <Container>
+      <section
+        class="relative z-30 mx-auto mt-48 space-y-5 text-center text-white sm:mt-32"
+      >
+        <h1
+          class="font-heading text-heading-three sm:text-heading-two lg:text-heading-one"
+        >
+          Data Protection Policy
+        </h1>
+      </section>
+    </Container>
+    <div class="absolute inset-0 z-10 bg-black/40"></div>
+  </header>
+
+  <Container>
+    <div class="mx-auto max-w-4xl py-16">
+      <h1 class="mb-8 text-center text-4xl font-bold text-primary">Data Protection Policy</h1>
+      
+      <div class="space-y-12">
+        <!-- Introduction -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">1. Introduction</h2>
+          <p class="text-gray-700">
+            MediQ-i is a telehealth company committed to protecting the personal data of its users in
+            line with the Nigeria Data Protection Regulation (NDPR 2019) issued by the National
+            Information Technology Development Agency (NITDA). This policy outlines how we collect,
+            process, store, retain, secure, and share your data.
+          </p>
+        </section>
+
+        <!-- Scope -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">2. Scope</h2>
+          <p class="text-gray-700">
+            This policy applies to all users of MediQ-i services, including patients, healthcare providers,
+            employees and partners. It governs all platforms including mobile apps, web portals, and
+            any other digital service channels.
+          </p>
+        </section>
+
+        <!-- Categories of Personal Data Collected -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">3. Categories of Personal Data Collected</h2>
+          <p class="mb-4 text-gray-700">We may collect and process the following:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Personal Information: Full name, gender, date of birth, address, email, phone number</li>
+            <li>Health Information: Medical history, current symptoms, test results, prescriptions</li>
+            <li>Usage Data: Logs, device type, IP address, session activity</li>
+            <li>Payment Data: Billing information and transaction history (where applicable)</li>
+          </ul>
+        </section>
+
+        <!-- Purpose of Data Collection -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">4. Purpose of Data Collection</h2>
+          <p class="mb-4 text-gray-700">We use your personal data to:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Deliver healthcare consultations and manage medical records</li>
+            <li>Prescribe and monitor treatments</li>
+            <li>Conduct diagnostic testing through partner laboratories</li>
+            <li>Schedule appointments and follow-ups</li>
+            <li>Ensure compliance with regulatory and professional standards</li>
+            <li>Improve our services through analytics and feedback</li>
+          </ul>
+        </section>
+
+        <!-- Lawful Basis for Processing -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">5. Lawful Basis for Processing</h2>
+          <p class="mb-4 text-gray-700">We process data based on:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Explicit user consent</li>
+            <li>Contractual necessity (e.g., for healthcare delivery)</li>
+            <li>Legal obligations (e.g., NDPR compliance, clinical documentation)</li>
+            <li>Legitimate interest (e.g., service improvement, fraud prevention)</li>
+          </ul>
+        </section>
+
+        <!-- Data Sharing with Third Parties -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">6. Data Sharing with Third Parties</h2>
+          <p class="mb-4 text-gray-700">
+            MediQ-i may share personal data with the following, under strict confidentiality
+            agreements:
+          </p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Accredited laboratories for diagnostic test processing</li>
+            <li>Licensed healthcare professionals for consultations and care coordination</li>
+            <li>Third-party service providers for cloud hosting, IT support, analytics</li>
+            <li>Regulatory bodies or law enforcement where legally required</li>
+          </ul>
+          <p class="mt-4 text-gray-700">
+            We ensure that all third parties comply with applicable data protection standards.
+          </p>
+        </section>
+
+        <!-- Data Security -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">7. Data Security</h2>
+          <p class="mb-4 text-gray-700">We implement strong security practices to protect your data, including:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>End-to-end encryption of all communications and health records</li>
+            <li>Secure servers and firewalls</li>
+            <li>Multi-factor authentication for platform access</li>
+            <li>Access control by role and responsibility</li>
+            <li>Regular vulnerability assessments and security audits</li>
+            <li>Staff training on confidentiality and data protection</li>
+          </ul>
+        </section>
+
+        <!-- Data Retention -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">8. Data Retention</h2>
+          <p class="mb-4 text-gray-700">
+            MediQ-i retains personal data for a period of up to three (3) years from the date of last
+            activity or as otherwise required by medical or legal obligations. After this period, data will
+            be:
+          </p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Securely deleted, or</li>
+            <li>Anonymized for research and statistical purposes</li>
+          </ul>
+          <p class="mt-4 text-gray-700">
+            Users may request earlier deletion, provided it does not conflict with legal or medical
+            obligations.
+          </p>
+        </section>
+
+        <!-- Consent and Agreement -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">9. Consent and Agreement to Use of Data</h2>
+          <p class="mb-4 text-gray-700">By using MediQ-i's services, you:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Agree to the collection, processing, storage, and sharing of your data as outlined in this policy</li>
+            <li>Consent to data being shared with third parties (such as laboratories) for the sole purpose of providing healthcare services</li>
+            <li>Acknowledge that you may withdraw consent at any time, subject to legal and medical exceptions</li>
+          </ul>
+          <div class="mt-6 space-y-3 text-gray-700">
+            <p>To withdraw your consent or request access to your data, please contact:</p>
+            <p>📧 <a href="mailto:mediqihealth@gmail.com" class="text-primary hover:underline">mediqihealth@gmail.com</a></p>
+            <p>📞 <a href="tel:+2349130056535" class="text-primary hover:underline">+2349130056535</a></p>
+          </div>
+        </section>
+
+        <!-- Your Rights Under NDPR -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">10. Your Rights Under NDPR</h2>
+          <p class="mb-4 text-gray-700">You have the right to:</p>
+          <ul class="list-inside list-disc space-y-3 text-gray-700">
+            <li>Access your personal data</li>
+            <li>Correct or update inaccurate data</li>
+            <li>Withdraw consent for processing</li>
+            <li>Request deletion of your data</li>
+            <li>File a complaint with NITDA</li>
+          </ul>
+          <p class="mt-4 text-gray-700">
+            All requests will be handled within 30 working days in line with NDPR guidelines.
+          </p>
+        </section>
+
+        <!-- Data Protection Officer -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">11. Data Protection Officer</h2>
+          <p class="text-gray-700">
+            MediQ-i has appointed a DPO to oversee data governance.
+          </p>
+        </section>
+
+        <!-- Review and Amendments -->
+        <section class="rounded-lg bg-white p-8 shadow-md">
+          <h2 class="mb-4 text-2xl font-semibold text-primary">12. Review and Amendments</h2>
+          <p class="text-gray-700">
+            This policy is subject to annual review or sooner if regulations change. We will notify users
+            of any significant updates via email and platform notifications.
+          </p>
+        </section>
+      </div>
+    </div>
+  </Container>
+</Layout>
